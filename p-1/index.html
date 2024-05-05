@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4d869c;
+      }
+
+      .navbar .logo {
+        margin: 16px;
+        color: #eef7ff;
+        cursor: pointer;
+      }
+
+      .navbar .list {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+      }
+
+      .navbar .list .list-navbar a {
+        text-decoration: none;
+        color: #eef7ff;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: 0.2s ease-in-out;
+      }
+      .navbar .list .list-navbar a:hover {
+        background-color: #7ab2b2;
+      }
+      .navbar .login {
+        background-color: #7ab2b2;
+        color: #eef7ff;
+        margin: 16px;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+
+      .form {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h2 class="logo">JarvisCamp</h2>
+      <ul class="list">
+        <li class="list-navbar"><a href="index.html">Home</a></li>
+        <li class="list-navbar"><a href="about.html">About Us</a></li>
+        <li class="list-navbar"><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <a href="#" class="login">Login</a>
+    </div>
+    <h1 class="judul">JarvisCamp</h1>
+    <h2 class="subjudul">Sosial Media Developer Santai Berkualitas</h2>
+    <p class="paragraf">
+      Belajar dan berbagi agar hidup ini semakin santai berkualitas
+    </p>
+
+    <h3>Benefit Join JarvisCamp</h3>
+    <ul>
+      <li>Mendapatkan motivasi dari sesama developer</li>
+      <li>Sharing knowledge dari para mastah Jarvis</li>
+      <li>Dibuat oleh calon developer terbaik</li>
+    </ul>
+
+    <h3>Cara Bergabung ke JarvisCamp</h3>
+    <ol>
+      <li>Mangunjungi Website ini</li>
+      <li>Mendaftar di <a href="#" class="form">Form Sign Up</a></li>
+      <li>Selesai!</li>
+    </ol>
+  </body>
+</html>
