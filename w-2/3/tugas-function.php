@@ -3,7 +3,7 @@ function ganjil($num1, $num2)
 {
     for ($i = $num1; $i < $num2; $i++) {
         if ($i % 2 == 1) {
-            echo $i;
+            echo $i . "<br/>";
         }
     }
 }
@@ -12,7 +12,7 @@ function genap($num1, $num2)
 {
     for ($i = $num1; $i < $num2; $i++) {
         if ($i % 2 == 0) {
-            echo $i;
+            echo $i .  "<br />";
         }
     }
 }
