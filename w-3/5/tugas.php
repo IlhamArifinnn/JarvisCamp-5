@@ -39,5 +39,7 @@ class Mobil extends Kendaraan
 $kendaraan = new Kendaraan("Toyota", 2020, "Hitam");
 echo $kendaraan->info();
 
+echo "<hr/>";
+
 $mobil = new Mobil("Mitsubisi", 2021, "Putih", "Pajero Sport", "Solar");
 echo $mobil->infoLengkap();
