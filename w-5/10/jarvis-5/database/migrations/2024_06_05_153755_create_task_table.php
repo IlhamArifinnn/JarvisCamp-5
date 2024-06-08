@@ -16,9 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->date('deadline');
             $table->text('description');
-            // $table->foreignId('status_id');
             $table->unsignedBigInteger('status_id');
             $table->foreign('status_id')->references('id')->on('statuses');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }

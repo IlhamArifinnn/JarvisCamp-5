@@ -50,7 +50,7 @@ class TaskController extends Controller
             [
                 'name' => "required|max:255|min:3",
                 'deadline' => 'required|date',
-                'status' => 'required|in:belum dikerjakan, sedang dikerjakan, selesai',
+                'status_id' => 'required|in:belum dikerjakan, sedang dikerjakan, selesai',
                 'description' => 'required'
             ]
         );
@@ -73,7 +73,7 @@ class TaskController extends Controller
             [
                 'name' => "required|max:255|min:3",
                 'deadline' => 'required|date',
-                'status' => 'required|in:belum dikerjakan, sedang dikerjakan, selesai',
+                'status_id' => 'required|in:belum dikerjakan, sedang dikerjakan, selesai',
                 'description' => 'required'
             ]
         );
@@ -81,13 +81,14 @@ class TaskController extends Controller
         $task->update([
             'name' => $request['name'],
             'deadline' => $request['deadline'],
-            'status' => $request['status'],
+            'status_id' => $request['status_id'],
             'description' => $request['description'],
         ]);
         return redirect()->route('tasks.list');
     }
 
-    public function delete(string $id){
+    public function delete(string $id)
+    {
         $task = Task::find($id);
         $task->delete();
         return redirect()->route('tasks.list');
